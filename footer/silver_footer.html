@@ -1,0 +1,26 @@
+<script>
+    function clicked(values) {
+        document.getElementById('footer').style.marginLeft = '150%';
+        setTimeout(function() {
+            window.location.href= `${values}`;
+        }, 200);
+    }
+</script>
+
+<div id="footer">
+    <div id="bigtitle3">
+        BOJ Silver
+    </div>
+    <div id="contents2">
+        <a href="javascript:clicked('/pythonpost?name=0001')">
+            <div id="post_F">
+                1434 | 실버 판테온
+            </div>
+        </a>
+        <a href="javascript:clicked('/pythonpost?name=0002')">
+            <div id="post_F">
+                4322 | 애플워치 착용하기
+            </div>
+        </a>
+    </div>
+</div>

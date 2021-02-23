@@ -1,0 +1,94 @@
+<div id="header">
+
+    <div id="bar">
+        <a href="/">
+            <div id="tl"><strong> Lee Haram </strong></div>
+        </a>
+
+        <div id="about"> ABOUT </div>
+
+            <script>
+            function aboutme() {
+                setTimeout(function() {
+                    location.href = '/aboutme';
+                }, 120);
+            }
+
+            function python() {
+                setTimeout(function() {
+                    location.href = '/python';
+                }, 120);
+            }
+
+            function frontend() {
+                setTimeout(function() {
+                    location.href = '/frontend';
+                }, 120);
+            }
+
+            function css() {
+                setTimeout(function() {
+                    location.href = '/css';
+                }, 120);
+            }
+
+            function silver() {
+                setTimeout(function() {
+                    location.href = '/silver';
+                }, 120);
+            }
+
+            function gold() {
+                setTimeout(function() {
+                    location.href = '/gold';
+                }, 120);
+            }
+
+            function back_in() {
+                document.getElementById('backphoto2').style.display = 'block';
+                document.getElementById('backout').style.display = 'block';
+                document.getElementById('footer').style.marginRight = '0px';
+                document.getElementById('footer').style.width = '100%';
+                setTimeout(function() {
+                    document.getElementById('header').style.display = 'none';
+                    document.getElementById('footer').style.marginLeft = '0px';
+                }, 350);
+            }
+
+            </script>
+
+            <a href="javascript:aboutme()">
+                <div class="sub" id="sub1"> About Me </div>
+            </a>
+
+        <div id="blog"> BLOG </div>
+
+            <a href="javascript:python()">
+                <div class="sub" id="sub2"> Python </div>
+            </a>
+
+            <a href="javascript:frontend()">
+                <div class="sub" id="sub3"> Front-end </div>
+            </a>
+
+            <a href="javascript:css()">
+                <div class="sub" id="sub4"> CSS </div>
+            </a>
+
+        <div id="boj"> BOJ </div>
+
+            <a href="javascript:silver()">
+                <div class="sub" id="sub5"> Silver </div>
+            </a>
+
+            <a href="javascript:gold()">
+                <div class="sub" id="sub6"> Gold </div>
+            </a>
+
+        <div id="backin">
+            <img id="backphoto" src="back.png" onclick="javascript:back_in()">
+        </div>
+
+    </div>
+
+</div>

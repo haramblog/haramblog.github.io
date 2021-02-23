@@ -1,0 +1,16 @@
+<script>
+    function back_out() {
+        document.getElementById('footer').style.marginRight = '0px;';
+        document.getElementById('footer').style.marginLeft = '200px';
+        document.getElementById('footer').style.width = '88.75%';
+        setTimeout(function() {
+            document.getElementById('backout').style.display = 'none';
+            document.getElementById('header').style.display = 'block';
+        }, 350);
+    }
+</script>
+<div id="backout">
+    <img id="backphoto2" src="back.png" onclick="javascript:back_out()">
+</div>
+</body>
+</html>

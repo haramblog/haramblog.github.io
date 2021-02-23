@@ -1,0 +1,37 @@
+<script>
+    function clicked(values) {
+        document.getElementById('footer').style.marginLeft = '150%';
+        setTimeout(function() {
+            window.location.href= `${values}`;
+        }, 200);
+    }
+
+    window.onload = function() {
+        document.getElementById('bigtitle3').style.borderBottom = '2px solid #f0a68d';
+    }
+
+</script>
+
+<div id="footer">
+    <div id="bigtitle3">
+        CSS 기술 블로그
+    </div>
+    <div id="contents2">
+        <a href="javascript:clicked('/csspost?name=0001')">
+            <div id="post_C">
+                CSS 블라블라
+                <div id="date_F">
+                    2021. 01. 01
+                </div>
+            </div>
+        </a>
+        <a href="javascript:clicked('/csspost?name=0002')">
+            <div id="post_C">
+                CSS 어쩌고저쩌고
+                <div id="date_F">
+                    2021. 01. 01
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
